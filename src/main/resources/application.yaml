@@ -7,9 +7,9 @@ spring:
       strict: false
       datasource:
         my:
-          url: jdbc:mysql://111.230.203.181:3306/driving_school?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+          url: jdbc:mysql://1xxxx:3306/test?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
           username: root
-          password: yangxin666
+          password: xxxx
           driver-class-name: com.mysql.cj.jdbc.Driver
           type: com.zaxxer.hikari.HikariDataSource
           hikari:
@@ -18,9 +18,9 @@ spring:
             connection-test-query: SELECT 1
             maximum-pool-size: 10
         salescneter:
-          url: jdbc:mysql://mysql-dev.2haohr.com:3306/mms-sales-center?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+          url: jdbc:mysql://xxx:3306/center?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
           username: root
-          password: Z2OrHKcVkS
+          password: xxxx
           driver-class-name: com.mysql.cj.jdbc.Driver
           type: com.zaxxer.hikari.HikariDataSource
           hikari:
