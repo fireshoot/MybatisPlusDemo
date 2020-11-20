@@ -1,0 +1,35 @@
+spring:
+  aop:
+    proxy-target-class: false
+  datasource:
+    dynamic:
+      primary: salescneter
+      strict: false
+      datasource:
+        my:
+          url: jdbc:mysql://111.230.203.181:3306/driving_school?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+          username: root
+          password: yangxin666
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.zaxxer.hikari.HikariDataSource
+          hikari:
+            max-lifetime: 30000
+            minimum-idle: 3
+            connection-test-query: SELECT 1
+            maximum-pool-size: 10
+        salescneter:
+          url: jdbc:mysql://mysql-dev.2haohr.com:3306/mms-sales-center?serverTimezone=Hongkong&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+          username: root
+          password: Z2OrHKcVkS
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.zaxxer.hikari.HikariDataSource
+          hikari:
+            max-lifetime: 30000
+            minimum-idle: 3
+            connection-test-query: SELECT 1
+            maximum-pool-size: 10
+server:
+  port: 8096
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
